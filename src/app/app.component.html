@@ -1,3 +1,5 @@
-<h1>
-  {{title}}
-</h1>
+<button (click)="generateEmails()">Generate Emails</button>
+<p>The Emails array has {{emails.length}} items in it</p>
+<button (click)="checkDuplicates()">Check for Duplicates</button>
+<p *ngIf="uniqueEmails">There are {{uniqueEmails.length}} unique addresses in the list</p>
+<p *ngIf="diff">Runtime in milliseconds: {{diff}}</p>
